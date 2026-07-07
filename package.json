@@ -1,0 +1,24 @@
+{
+  "name": "currency-lens",
+  "version": "0.1.0",
+  "description": "Highlight any price on any page to instantly convert it to your currency.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wxt",
+    "build": "wxt build",
+    "build:firefox": "wxt build -b firefox",
+    "zip": "wxt zip",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "icons": "node scripts/gen-icons.mjs",
+    "postinstall": "wxt prepare",
+    "smoke": "node scripts/smoke/run.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.61.1",
+    "typescript": "^5.6.0",
+    "vitest": "^3.2.0",
+    "wxt": "^0.20.27"
+  }
+}

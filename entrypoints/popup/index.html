@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Currency Lens</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Currency Lens</h1>
+      <p class="tagline">Highlight any price to convert it.</p>
+    </header>
+
+    <section class="card">
+      <label class="field">
+        <span>Home currency</span>
+        <select id="home"></select>
+      </label>
+      <p class="hint">Highlighted prices are converted to this currency.</p>
+    </section>
+
+    <section class="card">
+      <h2>Ambiguous symbols</h2>
+      <div id="symbol-defaults" class="grid"></div>
+    </section>
+
+    <section class="card">
+      <h2>Quick convert</h2>
+      <div class="row">
+        <input id="amount" type="number" value="100" min="0" step="any" />
+        <select id="from"></select>
+        <span class="arrow">→</span>
+        <select id="to"></select>
+      </div>
+      <output id="result"></output>
+    </section>
+
+    <footer id="status"></footer>
+
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>
