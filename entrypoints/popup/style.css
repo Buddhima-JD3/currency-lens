@@ -87,7 +87,14 @@ input {
 }
 
 .row input {
-  width: 70px;
+  flex: 0 0 56px;
+  width: 56px;
+}
+
+/* Let the two selects share the remaining space instead of overflowing. */
+.row select {
+  flex: 1 1 0;
+  min-width: 0;
 }
 
 .arrow {
