@@ -80,4 +80,4 @@ in a tooltip.
 - [x] Icons 16/32/48/128 (built into the package)
 - [x] Screenshots 1280×800: `screenshot-1-tooltip.png`, `screenshot-2-popup.png`
 - [ ] Optional small promo tile 440×280 (can be added later)
-- [ ] Privacy policy URL — host `privacy-policy.md` (GitHub repo page works)
+- [x] Privacy policy URL: https://github.com/Buddhima-JD3/currency-lens/blob/main/store-assets/privacy-policy.md
